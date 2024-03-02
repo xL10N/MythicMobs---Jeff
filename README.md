@@ -20,4 +20,6 @@ Finally use the floowing command in your server to spawn the mob:
 ```
 /mm m spawn Jeff
 ```
+**Showcase**
+https://youtu.be/41rqwI8Pbxc?si=G-CpgWo6FbPn5pvK
 
