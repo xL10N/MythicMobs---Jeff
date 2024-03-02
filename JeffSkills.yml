@@ -1,0 +1,45 @@
+SlownessAura:
+  Skills:
+  - effect:particlering{particle=reddust;color=#000066;a=1;y=0.5;r=3;points=64} 
+  - potion{type=SLOW;duration=300;level=5} @PlayersInRing{min=0; max=3}
+
+
+JumpArrowShot1:
+  Conditions:
+  - health{h=>50} true
+  Skills:
+  - jump{velocity=0.7} 
+  - delay 20
+  - skill{s=JumpArrowShot2} 
+
+JumpArrowShot2:
+  Skills:
+  - arrowvolley{a=20;s=200;v=20;rd=100;pickup=false} @target
+
+Grab:
+  Conditions:
+  - health{h=>50} true 
+  Skills:
+  - effect:particleline{particle=reddust;color=#a0a0a0;amount=5;y=0.6;fromOrigin=true} 
+  - pull{v=8}
+
+FireBeam:
+  Conditions:
+  - health{h=<50}
+  Skills:
+  - ignite{ticks=80} 
+  - effect:particleline{particle=flame;amount=5;y=0.6;fromOrigin=true} 
+  
+FlameDash:
+  Conditions:
+  - health{h=<50}
+  Skills:
+  - leap{v=250} @target
+  - effect:particlering{particle=flame;a=1;y=0.1;points=32;r=0.25} 
+  
+
+
+
+
+
+  

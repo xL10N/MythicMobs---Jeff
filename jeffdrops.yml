@@ -1,0 +1,21 @@
+JeffDrops:
+  MinItems: 5
+  MaxItems: 10
+  Conditions:
+    - playerwithin{d=32}
+  Drops:
+  - exp 300
+  - exp 150 0.5
+  - exp 100 0.5
+  - arrow 15
+  - arrow 5 0.5
+  - spectral_arrow 3
+  - spectral_arrow 1 0.3
+  - spectral_arrow 1 0.3
+  - flint_and_steel 1
+  - iron_ingot 5
+  - iron_nugget 5
+  - iron_ingot 5 0.5
+  - netherite_ingot 1
+  
+  

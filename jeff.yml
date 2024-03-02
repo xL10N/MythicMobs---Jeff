@@ -1,0 +1,46 @@
+Jeff:
+  Type: ZOMBIE
+  Health: 100
+  Damage: 5
+  Armor: 20
+  Faction: Undead
+  BossBar:
+    Enabled: true
+    Title: "Jeff - <mob.hp>"
+    Range: 32
+    Color: RED
+    Style: SOLID
+    Darksky: true
+  Options:
+    DigOutOfGround: true
+    Despawn: persistent 
+    FollowRange: 32
+    MaxCombatDistance: 32
+    MovementSpeed: 0.2
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+  Equipment:
+  - IRON_SWORD HAND
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  - players
+  Drops: 
+  - JeffDrops
+  KillMessages:
+  - "<target.name> was killed by <mob.name>"
+  Skills: 
+  - skill{s=SlownessAura} @self ~onTimer:5
+  - skill{s=JumpArrowShot1} @target ~onTimer:120
+  - skill{s=FireBeam} @PlayersInRing{min=0;max=7} ~onTimer:160 
+  - skill{s=FlameDash} @self ~onTimer:50
+  - skill{s=Grab} @target ~onTimer:70
+  
+
+  
